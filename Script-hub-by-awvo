@@ -1,0 +1,168 @@
+--variables
+
+local Character = game.Players.LocalPlayer.Character
+
+--Script
+
+local OrionLib = loadstring(game:HttpGet(OrionLib//raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
+
+local Window = OrionLib:MakeWindow({Name = "Universal Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "Universal Hub", IntroEnabled = false, IntroText = "Universal Hub made by AWVo"})
+ 
+ OrionLib:MakeNotification({
+	Name = "Cant find the game youre looking?",
+	Content = "Join my discord if you want any game to be added! https://discord.com/invite/DmNburuv2J",
+	Image = "rbxassetid://4483345998",
+	Time = 20
+})
+ 
+ local Tab = Window:MakeTab({
+	Name = "Universal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Execute infinite yield",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Fling gui",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Click here to get discord invite link",
+	Callback = function()
+      		setclipboard("https://discord.com/invite/DmNburuv2J")
+  	end    
+})
+
+Tab:AddTextbox({
+	Name = "Custom Walkspeed",
+	Default = "16",
+	TextDisappear = true,
+	Callback = function(Value)
+		Character.Humanoid.WalkSpeed = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "Custom Jump power",
+	Default = "50",
+	TextDisappear = true,
+	Callback = function(Value)
+		Character.Humanoid.JumpPower = Value
+	end	  
+})
+ 
+local Tab = Window:MakeTab({
+	Name = "Config",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Set Speed to 100",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Set Jump power to 100",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+  	end    
+})
+
+Tab:AddSlider({
+	Name = "Custom Walkspeed",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 10,
+	ValueName = "Walkspeed",
+	Callback = function(Value)
+			Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Custom JumpPower",
+	Min = 50,
+	Max = 500,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 10,
+	ValueName = "JumpPower",
+	Callback = function(Value)
+			Character.Humanoid.JumpPower = Value
+	end    
+})
+
+Tab:AddButton({
+	Name = "Destroy Gui",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Evade",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Evade Pepe Gui",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/PepesGH1/stuff/main/evadeloader.lua"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Muscle Legends",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Speed Hub X",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/GameList.lua"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Slap battles",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Slap Battles hub that exists",
+	Callback = function()
+	       loadstring(game:HttpGet(("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Battles")))()
+      		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Giangplay Slap Battles hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "KyKyryzob slap battles hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Slap-Battles-KykyryzoB-Hub-SB-9008"))()
+  	end    
+}) 
