@@ -4,7 +4,7 @@ local Character = game.Players.LocalPlayer.Character
 
 --Script
 
-local OrionLib = loadstring(game:HttpGet(OrionLib//raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Universal Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "Universal Hub", IntroEnabled = false, IntroText = "Universal Hub made by AWVo"})
  
